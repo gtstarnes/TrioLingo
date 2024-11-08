@@ -16,7 +16,14 @@ function App() {
       <div>
         {lang.map(phrase => {
           return (
-            <div>{phrase.phrase}</div>
+            <div>
+              {phrase.phrase}
+              <div>
+                <button>Right</button>
+                <button>Flip</button>
+                <button>Wrong</button>
+              </div>
+            </div>
           )
         })}
       </div>
