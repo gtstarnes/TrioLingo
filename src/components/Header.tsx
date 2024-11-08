@@ -2,7 +2,10 @@
 
 const Header = () => {
   return (
-    <div></div>
+    <div>
+        <div>Triolingo</div>
+        <div>Menu Nav</div>
+    </div>
   )
 }
 
