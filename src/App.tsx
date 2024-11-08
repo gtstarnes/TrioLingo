@@ -8,7 +8,9 @@ function App() {
   const lang = unit1;
   const [flipped, setFlipped] = useState<boolean>(false)
 
-  
+  const toggleWord = () => {
+    setFlipped(!flipped)
+  }
 
   return (
     <>
@@ -20,10 +22,10 @@ function App() {
         {lang.map(phrase => {
           return (
             <div>
-              {phrase.phrase}
+              <p>{flipped ? phrase.phrase: phrase.answer}</p>
               <div>
                 <button>Right</button>
-                <button>Flip</button>
+                <button onClick={toggleWord}>Flip</button>
                 <button>Wrong</button>
               </div>
             </div>
